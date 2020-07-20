@@ -99,8 +99,27 @@ h1 img { width:280px }
     display:inline-block; }  
 
 .side .btnContents { position:absolute;
-    bottom:40px; left:0px; color:#b9fb05;
-    font-size:60px; transform:skew(40deg)}
+    bottom:40px; left:100px; color:#b9fb05;
+    font-size:60px; transform:skew(40deg);
+    width:150px; height:50px; }
+.side:hover .btnContents { left:700px }    
+.side .btnContents i { position:absolute;
+    bottom:0; right:0; 
+    animation:arrowAni 1.5s infinite linear; }    
+.side .btnContents i:nth-child(1) {
+    animation-delay:0s }
+.side .btnContents i:nth-child(2) {
+    animation-delay:0.5s }    
+.side .btnContents i:nth-child(3) {
+    animation-delay:1s }         
+
+@keyframes arrowAni {
+0% { }
+100% { opacity:0;
+   transform:scale(1.5);
+   right:100px }
+}    
+
 
 
 
