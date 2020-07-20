@@ -7,6 +7,11 @@
 ol,ul { list-style: none; }
 a { text-decoration:none; color:inherit }
 img { border:0; vertical-align:middle }
+.blind { position:absolute; width:0; height:0;
+    overflow:hidden; font-size:0; 
+    line-height:0; text-indent:-99999px; 
+}
+
 
 body, html { width:100%; height:100%; position:fixed; background:#111 }
 .vid { width:100%; height:100%; position:fixed; 
@@ -48,6 +53,11 @@ h1 img { width:280px }
 .nav .depth2 > li > a { display:block }
 .nav .depth2 > li > a > span { transform:skew(40deg); display:inline-block }
 
+.sns { position:fixed; top:60px; right:50px }
+.sns li { display:inline-block;  margin-left:20px; 
+    font-size:25px;  color:#b9fb05; opacity:0.5;
+    transition:all 0.5s }
+.sns li:hover { transform:scale(1.4); opacity:1  }    
 
 
 
